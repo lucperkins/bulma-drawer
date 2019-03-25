@@ -1,0 +1,26 @@
+$off-canvas-width: 20rem !default
+$off-canvas-transition-duration: .2s !default
+$off-canvas-panel-padding: 1rem !default
+$off-canvas-background-color: #ffffff !default
+$off-canvas-z-index: 1000 !default
+
+=transition
+  transition: all $off-canvas-transition-duration
+
+.canvas
+  +transition
+
+  &.is-pushed
+    margin-left: $off-canvas-width
+
+.off-canvas
+  +transition
+  z-index: $off-canvas-z-index
+  background-color: $off-canvas-background-color
+  position: fixed
+  width: $off-canvas-width
+  left: -#{$off-canvas-width}
+  height: 100vh
+
+  &.is-visible
+    left: 0

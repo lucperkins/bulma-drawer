@@ -1,0 +1,8 @@
+{
+  "name": "bulma-drawer",
+  "version": "0.1.0",
+  "description": "A drawer plugin for the Bulma CSS framework",
+  "repository": "https://github.com/lucperkins/bulma-drawer",
+  "author": "Luc Perkins <lucperkins@gmail.com>",
+  "license": "ISC"
+}
