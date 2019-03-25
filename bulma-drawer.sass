@@ -3,6 +3,7 @@ $off-canvas-transition-duration: .2s !default
 $off-canvas-panel-padding: 1rem !default
 $off-canvas-background-color: #ffffff !default
 $off-canvas-z-index: 1000 !default
+$off-canvas-opacity: .5 !default
 
 =transition
   transition: all $off-canvas-transition-duration
@@ -12,6 +13,9 @@ $off-canvas-z-index: 1000 !default
 
   &.is-pushed
     margin-left: $off-canvas-width
+
+  &.is-opaque
+    opacity: $off-canvas-opacity
 
 .off-canvas
   +transition
